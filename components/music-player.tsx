@@ -4,7 +4,7 @@ import { Track } from "@/lib/music-data";
 import { Card } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Play, Pause, SkipBack, SkipForward, Volume2 } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { Button } from "./ui/button";
@@ -94,7 +94,7 @@ export function MusicPlayer({
     setProgress(value);
   };
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { y: 100, opacity: 0 },
     visible: {
       y: 0,
