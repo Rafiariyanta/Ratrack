@@ -1,5 +1,5 @@
 // Jamendo API client ID for demo purposes
-const CLIENT_ID = process.env.JAMENDO_CLIENT;
+const CLIENT_ID = process.env.NEXT_PUBLIC_JAMEMEDO_CLIENT_ID;
 const BASE_URL = "https://api.jamendo.com/v3.0";
 
 export interface JamendoTrack {
